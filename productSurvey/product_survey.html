@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment about branding</title>
+</head>
+<body>
+    <h1>ยินดีต้อนรับสู่ความคิดเห็นเกี่ยวกับผลิตภัณฑ์แบรนด์หรู</h1>
+  <h2>โปรดให้ความคิดเห็นของคุณ</h2>
+  <label for="name">ชื่อ:</label><br>
+  <input type="text" id="name" placeholder="ชื่อของคุณ" required><br>
+  <label for="age">อายุ:</label><br>
+  <input type="number" id="age" placeholder="อายุของคุณ" required><br>
+  <label for="email">อีเมล:</label><br>
+  <input type="email" id="email" placeholder="อีเมลของคุณ" required><br>
+  <label for="job">อาชีพ:</label><br>
+  <input type="text" id="job" placeholder="อาชีพของคุณ" required><br>
+  <label for="designation">ตำแหน่ง:</label><br>
+  <input type="text" id="designation" placeholder="ตำแหน่งของคุณ" required><br>
+  <label for="productType">ประเภทผลิตภัณฑ์:</label><br>
+  <select id="productType" required>
+    <option value="perfume">น้ำหอม</option>
+    <option value="cream">ครีม</option>
+    <option value="oils">น้ำมัน</option>
+  </select><br>
+  <label for="feedbackText">ความคิดเห็น:</label><br>
+  <textarea id="feedbackText" rows="5" cols="30" placeholder="ใส่ความคิดเห็นของคุณที่นี่" required></textarea><br>
+  <label for="userExperience">ประสบการณ์การใช้ผลิตภัณฑ์:</label><br>
+  <textarea id="userExperience" rows="5" cols="30" placeholder="เล่าประสบการณ์การใช้ผลิตภัณฑ์ของคุณที่นี่" required></textarea><br>
+<button id="submitBtn">ส่งความคิดเห็น</button>
+<hr>
+<div id="userInfo" style="display: none;">
+  <h2>ข้อมูลผู้ใช้:</h2>
+  <p>ชื่อ: <span id="userName"></span></p>
+  <p>อายุ: <span id="userAge"></span></p>
+  <p>อีเมล: <span id="userEmail"></span></p>
+  <p>อาชีพ: <span id="userJob"></span></p>
+  <p>ตำแหน่ง: <span id="userDesignation"></span></p>
+  <p>ความคิดเห็นสำหรับ  <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+    <p>ประสบการณ์การใช้ผลิตภัณฑ์: <span id="userExperienceDisplay"></span></p>   
+</div>
+<script src="./product_survey.js"></script>
+</body>
+</html>
