@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ระบบจัดการพนักงาน</title>
+</head>
+<body>
+   <h1>ระบบจัดการพนักงาน</h1>
+
+  <div>
+    <button onclick="displayEmployees()">แสดงพนักงาน</button>
+    <button onclick="calculateTotalSalaries()">คำนวณเงินเดือนรวม</button>
+    <button onclick="displayHREmployees()">แสดงพนักงานฝ่ายทรัพยากรบุคคล</button>
+    <button onclick="findEmployeeById(2)">ค้นหาพนักงานโดย ID 2</button>
+    <button onclick="findSpecialization()">ค้นหาพนักงานตามความเชี่ยวชาญ</button>
+  </div>
+
+ <div id="employeesDetails"></div>
+<script src="./employee_Detail.js"></script>
+</body>
+</html>
