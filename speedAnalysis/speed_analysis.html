@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>การวิเคราะห์การทดสอบความเร็ว</title>
+</head>
+<body>
+  <h1>การวิเคราะห์การพิมพ์ความเร็ว</h1>
+
+    <label for="inputText">พิมพ์ข้อความต่อไปนี้:</label><br>
+    <textarea id="inputText"  cols="50" rows="5" readonly placeholder="เตรียมตัวให้พร้อมสำหรับการพิมพ์..."></textarea><br>
+
+    <label for="userInput">การพิมพ์ของคุณ:</label><br>
+    <textarea id="userInput"  cols="50" rows="5" placeholder="เริ่มพิมพ์เมื่อพร้อม"></textarea><br>
+    <button onclick="startTest()">เริ่มการทดสอบ</button>
+    <button onclick="endTest()">สิ้นสุดการทดสอบ</button>
+    <div id="output"></div>
+    <script src="./speed_analysis.js"></script>
+</body>
+</html>
